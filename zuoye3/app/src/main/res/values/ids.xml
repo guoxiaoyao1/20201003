@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_click" type="id" />
+    <item name="btn_center" type="id" />
+    <item name="btn_fitCenter" type="id" />
+    <item name="btn_centercrop" type="id" />
+    <item name="btn_centerinside" type="id" />
+    <item name="btn_fitXY" type="id" />
+    <item name="btn_fitStart" type="id" />
+    <item name="btn_fitEnd" type="id" />
+    <item name="btn_icon" type="id" />
+    <item name="btn_left" type="id" />
+    <item name="btn_top" type="id" />
+    <item name="btn_right" type="id" />
+    <item name="btn_bottom" type="id" />
+    <item name="iv_scale" type="id" />
+</resources>
