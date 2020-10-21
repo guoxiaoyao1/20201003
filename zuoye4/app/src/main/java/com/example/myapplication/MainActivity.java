@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,13 +21,13 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.bean.UserInfo;
 import com.example.myapplication.database.UserDBHelper;
 import com.example.myapplication.util.DateUtil;
-import com.example.myapplication.util.ViewUtil;
 import com.example.myapplication.util.ViewUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener {
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText et_password; // 声明一个编辑框对象
     private Button btn_forget; // 声明一个忘记密码按钮控件对象
     private Button btn_login; // 声明一个登录按钮控件对象
-    private CheckBox ck_remember; // 声明一个复选框对象
+    private Switch ck_remember; // 声明一个复选框对象
 
     private int mRequestCode = 0; // 跳转页面时的请求代码
     private int mType = 0; // 用户类型
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private UserDBHelper mHelper; // 声明一个用户数据库的帮助器对象
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
