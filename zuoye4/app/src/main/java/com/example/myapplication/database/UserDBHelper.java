@@ -1,5 +1,4 @@
 package com.example.myapplication.database;
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
