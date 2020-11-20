@@ -2,15 +2,15 @@ package com.example.zuoye007;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.example.zuoye007.adapter.GoodsAdapter;
@@ -46,7 +46,7 @@ public class ShoppingChannelActivity extends AppCompatActivity implements View.O
         // 从布局视图中获取名叫gv_channel的网格视图
         gv_channel = findViewById(R.id.gv_channel);
         findViewById(R.id.iv_cart).setOnClickListener(this);
-        tv_title.setText("手机商场");
+        tv_title.setText("国逍遥的商场");
     }
 
     @Override
@@ -122,9 +122,9 @@ public class ShoppingChannelActivity extends AppCompatActivity implements View.O
         // 构建商场中商品网格的适配器对象
         GoodsAdapter adapter = new GoodsAdapter(this, goodsArray, this);
         // 给gv_channel设置商品网格适配器
-        gv_channel.setAdapter((ListAdapter) adapter);
+        gv_channel.setAdapter(adapter);
         // 给gv_channel设置网格项点击监听器
-        gv_channel.setOnItemClickListener((AdapterView.OnItemClickListener) adapter);
+        gv_channel.setOnItemClickListener(adapter);
     }
 
     private String mFirst = "true"; // 是否首次打开
