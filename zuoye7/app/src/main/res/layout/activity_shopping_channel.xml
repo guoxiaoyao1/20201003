@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:horizontalSpacing="2dp"
         android:numColumns="2"
-        android:padding="15dp"
+        android:padding="10dp"
         android:stretchMode="columnWidth"
         android:verticalSpacing="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
